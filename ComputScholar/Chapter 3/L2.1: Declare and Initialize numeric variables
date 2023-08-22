@@ -1,0 +1,10 @@
+class ToyFactory
+{
+   public static void main(String[] args)
+   {
+   int numToys = 10;
+   float toyWeight = 1.2F;
+   System.out.println(numToys);
+   System.out.println(toyWeight);
+   }
+}
