@@ -1,0 +1,10 @@
+class ToyFactory
+{
+   public static void main(String[] args)
+   {
+        final int NUM_TOY_TYPES;
+        NUM_TOY_TYPES = 7;
+      
+      System.out.println(NUM_TOY_TYPES);
+   }
+}
