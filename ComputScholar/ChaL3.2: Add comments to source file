@@ -1,0 +1,12 @@
+//* Toy Factory *//
+/*
+We make all kinds of toys
+*/
+
+class Factory
+{
+   public static void main(String[] args)
+   {
+       
+   }
+}
