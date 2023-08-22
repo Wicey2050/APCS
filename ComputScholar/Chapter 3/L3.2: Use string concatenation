@@ -1,0 +1,10 @@
+class ToyFactory
+{
+   public static void main(String[] args)
+   {
+      int model = 1000;
+      double version = 2.0;
+      System.out.println("Robot model# " + model + ", " + "version " + version);
+
+   }
+}
