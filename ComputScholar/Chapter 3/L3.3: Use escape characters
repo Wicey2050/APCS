@@ -1,0 +1,7 @@
+class ToyFactory
+{
+   public static void main(String[] args)
+   {
+    System.out.println("Our motto is \"Fun for All\".");
+   }
+}
