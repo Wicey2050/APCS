@@ -1,0 +1,13 @@
+class ToyFactory
+{
+   public static void main(String[] args)
+   {
+      boolean isOpen = true;
+      char    grade = 'A';
+      double  taxRate = 0.07;
+
+      System.out.println(isOpen);
+      System.out.println(grade);
+      System.out.println(taxRate);
+   }
+}
