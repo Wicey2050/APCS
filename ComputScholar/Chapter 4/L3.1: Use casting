@@ -1,0 +1,14 @@
+public class Calculator
+{
+   public static void main(String[] args)
+   {
+      long value1   = 2;
+      double value2 = 3.14159;
+      
+      byte value3 = (byte)value1;
+      float value4 = (float)value2;
+      
+      System.out.println("Byte value  = " + value3);
+      System.out.println("Float value = " + value4);
+   }
+}
