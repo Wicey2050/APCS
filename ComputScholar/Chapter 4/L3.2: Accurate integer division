@@ -1,0 +1,11 @@
+public class Calculator
+{
+   public static void main(String[] args) 
+   {
+      int numSodas = 4;
+      int totalCost = 10;
+      
+      double costPerSoda = (double)totalCost / (double)numSodas;
+      System.out.println("Cost per soda: " + costPerSoda);
+   }
+}  
