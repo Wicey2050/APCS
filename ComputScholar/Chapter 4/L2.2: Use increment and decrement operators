@@ -1,0 +1,23 @@
+public class Calculator
+{
+   public static void main(String[] args) 
+   {
+      int answer = 0;
+      
+      // increment answer here
+      answer++;
+      System.out.println("answer = " + answer);
+
+      // increment answer here  
+      answer++;
+      System.out.println("answer = " + answer);
+
+      // decrement answer here
+      answer--;
+      System.out.println("answer = " + answer);
+
+      // decrement answer here
+      answer--;
+      System.out.println("answer = " + answer);
+   }
+}  
