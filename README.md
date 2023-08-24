@@ -3,6 +3,7 @@ Alright so a brief summary of this github rep. It is basically all the APCS and/
 
 ## ChangeLog
 Changelog #3
+
 New assignments added:
 
 ComputScholar:
