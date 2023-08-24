@@ -1,0 +1,16 @@
+class Gallery
+{
+   public static void main( String[] args )
+   {
+       Painting p1 = new Painting("Van Gogh", "Starry Night", 1888);
+       Painting p2 = new Painting("Salvador Dali", "The Persistence of Memory", 1931);
+
+       // Declare and initialize variables here for the first Painting
+        String artist1 = p1.getArtist();
+        String name1   = p1.getName();
+        int year1      = p1.getYear();
+       
+       System.out.println("'" + name1 + "' by " + artist1 + " was painted in " + year1);
+       System.out.println("'" + p2.getName() + "' by " + p2.getArtist() + " was painted in " + p2.getYear());
+   }
+}  
