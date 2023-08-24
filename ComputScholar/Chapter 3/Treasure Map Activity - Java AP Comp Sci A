@@ -1,0 +1,17 @@
+// Full Name
+public class TreasureMap {
+    public static void main(String[] args) {
+        int secret1 = 20;
+        int secret2 = 90;
+        int secret3 = 40;
+        int secret4 = 135;
+        int secret5 = 60;
+        int secret6 = 5;
+        System.out.println("1.\tWalk " + secret1 + " paces straight inland from the end of the pier");
+        System.out.println("2.\tTurn left " + secret2 + " degrees");
+        System.out.println("3.\tWalk " + secret3 + " paces");
+        System.out.println("4.\tTurn right " + secret4 + " degrees");
+        System.out.println("5.\tWalk " + secret5 + " paces");
+        System.out.println("6.\tDig " + secret6 + " feet deep");
+    }
+}
