@@ -1,0 +1,15 @@
+public class Gallery
+{
+   public static void main( String[] args )
+   {
+       // declare and initialize the artist variable here
+    String artist = "Van Gogh";
+    String painting = "Starry Night";
+       // declare and initialize the painting variable here
+
+       int year = 1888;
+       
+       System.out.println("I own a painting by " + artist);
+       System.out.println("\'" + painting + "\'" + " was created in " + year);
+   }
+}  
