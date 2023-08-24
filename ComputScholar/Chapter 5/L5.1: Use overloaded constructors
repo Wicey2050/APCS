@@ -1,0 +1,12 @@
+class Gallery
+{
+   public static void main( String[] args )
+   {
+    Painting p1 = new Painting("Van Gogh", "Starry Night", 1888);
+    Painting p2 = new Painting("Leonardo Da Vinci", "Mona Lisa");
+    Painting p3 = new Painting("Mystery", 1900);
+    p1.describe();
+    p2.describe();
+    p3.describe();
+   }
+}  
