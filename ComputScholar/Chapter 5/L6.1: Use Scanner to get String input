@@ -1,0 +1,22 @@
+import java.util.*;
+public class Gallery
+{
+	public static void main(String[] args) 
+	{
+		// create new Scanner and store in input reference
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Who is your favorite artist? ");
+		// get the next line of input and store in artist String variable
+		String artist = input.nextLine();
+
+		System.out.print("What is your favorite painting? ");
+		// get the next line of input and store in painting String variable
+		String painting = input.nextLine();
+
+		System.out.println("'" + painting + "' by " + artist + " is a great painting.");
+
+		// Close the Scanner object
+		input.close();
+	}
+}
