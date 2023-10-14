@@ -1,0 +1,32 @@
+// Student Name
+import java.util.*; // for Scanner
+
+class StringTheory
+{
+    public static void main(String[] args)
+    {
+        // create a Scanner and get 2 user input strings and 1 double
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter string 1: ");
+        String str1 = input.nextLine();
+        System.out.print("Enter string 2: ");
+        String str2 = input.nextLine();
+        System.out.print("Enter a double: ");
+        double num1 = input.nextDouble();
+        input.nextLine();   // flush remaining newline
+        
+        input.close();  // done with scanner
+        
+        System.out.println();
+
+        // produce report (STUDENT CODE HERE)
+        System.out.println("Exactly equal: " + str1.equals(str2));
+        System.out.println("Equal, ignoring case: " + str1.equalsIgnoreCase(str2));
+        System.out.println("Replace: " + str1.replace('e', 'x'));
+        System.out.println("Substring: " + str1.substring(1,4));
+        System.out.println("Upper Case: " + str1.toUpperCase());
+        System.out.println("First 'a': " + str1.indexOf('a'));
+        System.out.println(String.format("Formatted: That %s costs $%.2f", str1, num1));
+    }
+}  
