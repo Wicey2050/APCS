@@ -1,0 +1,17 @@
+import java.util.*;
+public class MadLib
+{
+	public static void main(String[] args)
+	{
+	    // gather three strings  from the user
+	    Scanner input = new Scanner(System.in);
+	    System.out.print("Enter a proper name, a noun, and a verb: ");
+	    String name = input.next();
+	    String noun = input.next();
+	    String verb = input.next();
+	    input.close();
+	    
+	    // STUDENT - write code using string concatenation to build and print the output "&lt;name&gt; &lt;verb&gt; the &lt;noun&gt;"
+        System.out.println(name + " " + verb + " the " + noun);
+	}
+}
