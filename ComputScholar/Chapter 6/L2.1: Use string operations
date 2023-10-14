@@ -1,0 +1,19 @@
+import java.util.*;
+public class WordBlender
+{
+	public static void main(String[] args)
+	{
+	    // gather one word from the user
+	    Scanner input = new Scanner(System.in);
+	    System.out.print("Enter a word: ");
+	    String word = input.nextLine();
+	    input.close();
+	    
+	    // STUDENT - write code to print the word length
+        System.out.println(word.length());
+	    // STUDENT - write code to print the word in uppercase
+        System.out.println(word.toUpperCase());
+	    // STUDENT - write code to print the word in lowercase
+        System.out.println(word.toLowerCase());
+	}
+}
