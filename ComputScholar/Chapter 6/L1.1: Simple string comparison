@@ -1,0 +1,17 @@
+import java.util.*;
+public class WordBlender
+{
+	public static void main(String[] args)
+	{
+	    // gather two words from the user
+	    Scanner input = new Scanner(System.in);
+	    System.out.print("Enter two words: ");
+	    String word1 = input.next();
+	    String word2 = input.next();
+	    input.close();
+	    
+	   boolean isequal = word1.equals(word2);
+	   System.out.println(word1 + " equals " + word2 + ": " + isequal);
+
+	}
+}
