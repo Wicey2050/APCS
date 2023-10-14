@@ -1,0 +1,25 @@
+import java.util.*;
+public class StringBuilder
+{
+	public static void main(String[] args)
+	{
+	    // gather three decimal numbers from the user
+	    Scanner input = new Scanner(System.in);
+	    System.out.print("Enter three decimal values: ");
+	    double value1 = input.nextDouble();
+	    double value2 = input.nextDouble();
+	    double value3 = input.nextDouble();
+	    input.close();
+	    
+	    // STUDENT - write code to build and print a string that contains the 3 values
+	    // in reverse order (value3 value2 value1), formatted to 2 decimal points.
+        System.out.println(String.format("%3$.2f %2$.2f %1$.2f", value1, value2, value3));
+
+	    // STUDENT - write code to display the three input values in order on separate lines,
+	    // each line with a width of 5 characters and formatted to 2 decimal points.
+        System.out.println(String.format("%5.2f", value1));
+        System.out.println(String.format("%5.2f", value2));
+        System.out.println(String.format("%5.2f", value3));
+
+	}
+}
