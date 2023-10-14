@@ -1,0 +1,22 @@
+import java.util.*;
+public class WordBlender
+{
+	public static void main(String[] args)
+	{
+	    // gather one word from the user
+	    Scanner input = new Scanner(System.in);
+	    System.out.print("Enter a word: ");
+	    String word = input.nextLine();
+	    input.close();
+	    
+	    // STUDENT - write code to get and print the first character
+        System.out.println(word.charAt(0));	    
+
+	    // STUDENT - write code to get and print the last character
+	    System.out.println(word.charAt(word.length() - 1));
+
+	    // STUDENT - write code to get and print the substring starting at index 1 with length 3
+        System.out.println(word.substring(1, 4));	    
+
+	}
+}
