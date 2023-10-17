@@ -1,0 +1,21 @@
+import java.util.*;
+
+class Wrapper
+{
+   public static void main(String[] args)
+   {
+      Scanner input = new Scanner(System.in);
+      System.out.print("Enter a circle radius: ");
+      double radius = input.nextDouble();
+      input.close();
+      
+      // Begin student code 
+        double area = (Math.PI * Math.pow(radius, 2.0));
+        String answer = Double.toString(area);
+
+      // End student code      
+      
+      System.out.println("The circle area is " + answer);
+   }
+} 
+                
