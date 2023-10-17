@@ -1,0 +1,18 @@
+import java.util.*;
+class Printer
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter an integer and a long value: ");
+       int intValue = input.nextInt();
+       long longValue = input.nextLong();
+       input.close();
+       
+       // student code here
+        System.out.println(intValue + " = " + "%" + Integer.toBinaryString(intValue));
+        System.out.println(longValue + " = " + "0x" + Long.toHexString(longValue));
+
+   }
+} 
+                
