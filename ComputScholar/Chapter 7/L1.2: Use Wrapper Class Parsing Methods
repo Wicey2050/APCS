@@ -1,0 +1,24 @@
+import java.util.*;
+
+class Wrapper
+{
+   public static void main(String[] args)
+   {
+      Scanner input = new Scanner(System.in);
+      System.out.print("Enter the length and width of a rectangle: ");
+      String strLength = input.next();
+      String strWidth = input.next();
+      input.close();
+      
+      // Begin student code 
+        double length = Double.parseDouble(strLength);
+        double width = Double.parseDouble(strWidth);
+        double area = length * width;
+
+
+      // End student code      
+      
+      System.out.println("The rectangle area is " + area);
+   }
+} 
+                
