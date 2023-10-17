@@ -1,0 +1,17 @@
+import java.util.*;
+class Calculator
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter a decimal value: ");
+       double value = input.nextDouble();
+       input.close();
+       
+       // student code here
+       System.out.println(value + " * 2.0 = " + value * 2.0);
+       System.out.println(value + " * 3.0 = " + value * 3.0);
+
+   }
+} 
+                
