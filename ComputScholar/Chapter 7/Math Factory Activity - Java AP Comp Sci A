@@ -1,0 +1,39 @@
+// Student Name
+import java.util.*; // for Scanner
+
+class MathFactory
+{
+    public static void main(String[] args)
+    {
+        // create a Scanner and get 2 user input operands
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter operand 1: ");
+        String operand1 = input.nextLine();
+        System.out.print("Enter operand 2: ");
+        String operand2 = input.nextLine();
+
+        input.close();  // done with scanner
+        
+        System.out.println();
+        
+        // convert input strings to doubles
+        double op1 = Double.parseDouble(operand1);
+        double op2 = Double.parseDouble(operand2);
+
+        // generate and display equations (STUDENT CODE HERE)
+            System.out.println("The maximum of " + op1 + " and " + op2 + " = " + Math.max(op1, op2));
+            System.out.println(op1 + " raised to " + op2 + " = " + Math.pow(op1, op2));
+            System.out.println(op1 + " rounded to the nearest integer = " + Math.round(op1));
+            System.out.println("The square root of " + op1 + " = " + Math.sqrt(op1));
+            
+        // truncating op1 and op2 to integers
+        int op1s = (int) op1;
+        int op2s = (int) op2;
+        
+        System.out.println(op1s + " decimal = 0b" + Integer.toBinaryString(op1s) + " binary");
+        System.out.println(op1s + " decimal = 0x" + Integer.toHexString(op1s) + " hex");
+        
+
+   }
+} 
