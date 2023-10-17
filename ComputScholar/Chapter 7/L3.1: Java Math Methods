@@ -1,0 +1,20 @@
+import java.util.*;
+class Calculator
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter a floating point value: ");
+       float value = input.nextFloat();
+       input.close();
+       
+       // student code here
+        System.out.println("Ceiling = " + Math.ceil(value));
+        System.out.println("Floor = " + Math.floor(value));
+        System.out.println("Abs = " + Math.abs(value));
+        System.out.println("Square = " + Math.pow(value, 2.0));
+           
+
+   }
+} 
+                
