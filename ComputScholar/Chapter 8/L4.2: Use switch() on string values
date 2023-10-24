@@ -1,0 +1,30 @@
+import java.util.*;
+class Switcheroo
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter the starting word: ");
+       String startingWord = input.nextLine();
+       input.close();
+       
+       // student code here
+        switch (startingWord) {
+            case "eeny":
+                System.out.println("meeny");
+                break;
+            case "meeny":
+                System.out.println("miny");
+                break;
+            case "miny":
+                System.out.println("moe");
+                break;
+            case "moe":
+                System.out.println("catch a tiger by the toe");
+                break;
+            default:
+            System.out.println("What???");
+        }
+   }
+} 
+                
