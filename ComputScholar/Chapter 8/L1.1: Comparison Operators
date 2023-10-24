@@ -1,0 +1,23 @@
+import java.util.*;
+class LogicallySpeaking
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter two integers: ");
+       int value1 = input.nextInt();
+       int value2 = input.nextInt();
+       input.close();
+       
+       // student code here
+       boolean result1 = (value1 > value2);
+       boolean result2 = (value1 <= value2);
+       boolean result3 = (value1 == value2);
+       // end student code
+       
+       System.out.println(value1 + " greater than " + value2 + ": " + result1);
+       System.out.println(value1 + " less than or equal to " + value2 + ": " + result2);
+       System.out.println(value1 + " equal to " + value2 + ": " + result3);
+   }
+} 
+                
