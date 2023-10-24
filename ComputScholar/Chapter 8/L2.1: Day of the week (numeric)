@@ -1,0 +1,19 @@
+import java.util.*;
+class LogicallySpeaking
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("What day of the week is it (0 - 6)? ");
+       int day = input.nextInt();
+       input.close();
+       
+       // student code here
+        if (day < 5) {
+            System.out.println("Today is a school day");
+        }
+        else
+            System.out.println("It's the weekend!");
+   }
+} 
+                
