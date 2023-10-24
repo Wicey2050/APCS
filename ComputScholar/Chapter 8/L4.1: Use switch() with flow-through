@@ -1,0 +1,26 @@
+import java.util.*;
+class Switcheroo
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter first output row (1 - 5): ");
+       int firstRow = input.nextInt();
+       input.close();
+       
+       // student code here
+        switch (firstRow) {
+            case 1:
+                System.out.println("1: *");
+            case 2:
+                System.out.println("2: **");
+            case 3:
+                System.out.println("3: ***");
+            case 4:
+                System.out.println("4: ****");
+            case 5:
+                System.out.println("5: *****");
+        }
+   }
+} 
+                
