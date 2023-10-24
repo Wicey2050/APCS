@@ -1,0 +1,26 @@
+import java.util.*;
+class LogicallySpeaking
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("How much money do you have to spend? ");
+       double money = input.nextDouble();
+       input.close();
+       
+       // student code here
+        System.out.println("With $" + money + ", you can...");
+        
+        if (money < 15.00) {
+            System.out.println("Eat fast food");
+        }
+        else if (money < 30.00) {
+            System.out.println("See a movie");
+        }
+        else {
+            System.out.println("Buy new clothes");
+        }
+        System.out.println("...or just save your money!");
+   }
+} 
+                
