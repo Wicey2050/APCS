@@ -1,0 +1,26 @@
+import java.util.*;
+class CardGame {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter cards for Player 1 and Player 2: ");
+    int p1Card = input.nextInt();
+    int p2Card = input.nextInt();
+    input.close();
+
+    // student code here
+    if (p1Card > p2Card) {
+      System.out.println("Player 1 Wins");
+      if ((p1Card - p2Card) > 5) {
+        System.out.println("Smashing victory");
+      }
+    } else if (p2Card > p1Card) {
+      System.out.println("Player 2 Wins");
+      if ((p2Card - p1Card) > 5) {
+        System.out.println("Smashing victory");
+      }
+    } else {
+      System.out.println("Tie game");
+    }
+    System.out.println("Thank you for playing");
+  }
+}
