@@ -1,0 +1,24 @@
+import java.util.*;
+class LogicallySpeaking
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("What day is it? ");
+       String day = input.nextLine();
+       input.close();
+       
+       // student code here
+       System.out.println("Today is " + day);
+       if (day.equalsIgnoreCase("Tuesday")) {
+       }
+       if (day.equalsIgnoreCase("Friday")) {
+           System.out.println("Last day of school");
+       }
+       if (day.equalsIgnoreCase("Saturday")) {
+           System.out.println("I get to sleep in");
+       }
+        System.out.println("Have a great day");
+   }
+} 
+                
