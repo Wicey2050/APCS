@@ -1,0 +1,63 @@
+// Student Name
+import java.util.*;
+
+public class Calculator {
+  public static void main(String[] args) {
+    // declare and initialize variables
+    int choice = 0;
+    double operand1 = 0.0;
+    double operand2 = 0.0;
+
+    // get user input
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("Calculator Options:");
+    System.out.println("1. Add");
+    System.out.println("2. Subtract");
+    System.out.println("3. Multiply");
+    System.out.println("4. Divide");
+    try {
+      System.out.print("Enter your choice (1-4): ");
+      choice = input.nextInt();
+      input.nextLine(); // clear newline from stream
+    } catch (Exception ex) {}
+    if (choice < 1 || choice > 4) {
+      System.out.println("Invalid choice");
+    } else {
+    // operand input
+    System.out.print("Enter operand 1: ");
+    if (input.hasNextDouble()) {
+      operand1 = input.nextDouble();
+      input.nextLine();
+    } else {
+        input.nextLine();
+    }
+    System.out.print("Enter operand 2: ");
+    if (input.hasNextDouble()) {
+      operand2 = input.nextDouble();
+      input.nextLine();
+    } else {
+        input.nextLine();
+    }
+    // process user input
+    if (choice == 1) {
+      double result = operand1 + operand2;
+      System.out.println(operand1 + " + " + operand2 + " = " + result);
+    } else if (choice == 2) {
+      double result = operand1 - operand2;
+      System.out.println(operand1 + " - " + operand2 + " = " + result);
+    } else if (choice == 3) {
+      double result = operand1 * operand2;
+      System.out.println(operand1 + " * " + operand2 + " = " + result);
+    } else if (choice == 4) {
+      if (operand2 == 0) {
+        System.out.println("You cannot divide by zero");
+      } else {
+        double result = operand1 / operand2;
+        System.out.println(operand1 + " / " + operand2 + " = " + result);
+        }
+    }
+}
+    input.close();
+  }
+}
