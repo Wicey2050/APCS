@@ -1,0 +1,24 @@
+import java.util.*;
+class Survivor
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter a word: ");
+       String word = input.nextLine();
+       input.close();
+       
+       // student code here
+       try {
+        System.out.println("The character at index 5 is: " + word.charAt(5));
+       } catch (Exception ex) {
+        System.out.println("No character at index 5"); 
+       }
+       try {
+        System.out.println("The character at index 6 is: " + word.charAt(6));
+       } catch (Exception ex) {
+        System.out.println("No character at index 6");
+       }
+   }
+} 
+                
