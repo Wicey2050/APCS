@@ -1,0 +1,22 @@
+import java.util.*;
+class Authenticator
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter username and password: ");
+       String username = input.next();
+       String password = input.next();
+       input.close();
+       
+       // student code here
+        if (username.equals("admin") && password.equals("obeyme")) {
+            System.out.println("Welcome Boss");
+        } else {
+            System.out.println("Nice try");
+        }
+
+
+   }
+} 
+                
