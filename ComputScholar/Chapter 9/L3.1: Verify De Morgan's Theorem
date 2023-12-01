@@ -1,0 +1,23 @@
+import java.util.*;
+class BooleanAlgebra
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter true or false for A and B: ");
+       boolean A = input.nextBoolean();
+       boolean B = input.nextBoolean();
+       input.close();
+
+       // student code here - complete the expressions below
+       boolean result1 = !( A || B);
+       boolean result2 = (!A && !B);// complete DeMorgan's equivalent for result1
+       boolean result3 = !( A && B);
+       boolean result4 = (!A || !B);// complete DeMorgan's equivalent for result3
+       
+       // verify results
+       System.out.println(result1 + " = " + result2);
+       System.out.println(result3 + " = " + result4);
+   }
+} 
+                
