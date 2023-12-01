@@ -1,0 +1,25 @@
+import java.util.*;
+public class ToyBox
+{
+    public static void main( String[] args )
+    {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter the colors for two teddy bears: ");
+       String color1 = input.next();
+       String color2 = input.next();
+       input.close();
+       
+       Teddy bear1 = new Teddy();
+       bear1.setColor(color1);
+       Teddy bear2 = new Teddy();
+       bear2.setColor(color2);
+       
+       // student code here
+        if (bear1.equals(bear2)) {
+            System.out.println("The teddy bears are equal");
+        } else {
+            System.out.println("The teddy bears are different");
+        }
+
+    }
+}  
