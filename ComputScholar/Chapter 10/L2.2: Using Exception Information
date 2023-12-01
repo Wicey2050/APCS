@@ -1,0 +1,23 @@
+import java.util.*;
+class Factory
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter a number: ");
+       int data = input.nextInt();
+       input.close();
+       
+       RiskyMachine rm = new RiskyMachine();
+       
+        try {
+        rm.mysteryWork(data);   
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+
+
+       System.out.println("All in a day's work");
+   }
+} 
+                
