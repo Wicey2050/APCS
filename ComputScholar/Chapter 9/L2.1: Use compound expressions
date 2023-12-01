@@ -1,0 +1,23 @@
+import java.util.*;
+class CandyStore
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter a candy type and amount: ");
+       String candy = input.next();
+       int amount = input.nextInt();
+       input.close();
+       
+       // student code here
+        if (candy.equals("chocolate") && amount < 5) {
+            System.out.println("Here are your " + amount + " chocolates");
+        } else if (candy.equals("butterscotch") || (amount == 1)) {
+            System.out.println("We have " + amount + " " + candy);
+        } else {
+            System.out.println("Sorry, not available");
+        }
+        System.out.println("Thanks for visiting");
+   }
+} 
+                
