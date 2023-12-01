@@ -1,0 +1,31 @@
+import java.util.*;
+class ExceptionFactory
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Select Exception (1-3): ");
+       int errorType = input.nextInt();
+       input.close();
+       
+       // student 
+       switch(errorType)
+       {
+           case 1:  // NullPointerException
+           String str = null;
+           System.out.println(str.length());
+                break;
+           case 2:  // IndexOutOfBoundsException
+           String str1 = "Hello World!";
+           System.out.println(str1.substring(1,-1));
+                break;
+           case 3:  // ArithmeticException
+           System.out.println(1 / 0);
+                break;
+           default:
+                System.out.println("Unrecognized input");
+            break;
+       }
+   }
+} 
+                
