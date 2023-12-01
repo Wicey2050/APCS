@@ -1,0 +1,20 @@
+import java.util.*;
+class CashRegister
+{
+   public static void main(String[] args)
+   {
+       double cost = 10.50;  // cost of the item being purchased
+       
+       // get payment amount from the user
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter payment for your $" + String.format("%.2f",cost) + " purchase: ");
+       double payment = input.nextDouble();
+       input.close();
+       
+       // calculate and display change
+       double change = payment - cost;
+       System.out.println("Your change is $" + String.format("%.2f",change));
+
+   }
+} 
+                
