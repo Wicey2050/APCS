@@ -1,0 +1,50 @@
+import java.util.*;
+
+public class TempConverter 
+{
+	public static void main(String[] args) 
+	{
+	    // declare variables to hold temperatures
+	    double fahrenheitTemp = 0;
+	    double celsiusTemp = 0;
+	    
+		// Create a Scanner class variable to handle user input
+		Scanner input = new Scanner(System.in);
+		
+		// Ask the user for a temperature in Fahrenheit
+		System.out.print("Enter a temperature in Fahrenheit: ");
+		if (input.hasNextDouble())
+		{
+	        fahrenheitTemp = input.nextDouble();
+    
+            // convert to Celsius and display result
+            celsiusTemp = (fahrenheitTemp - 32.0) * 5.0 / 9.0;
+    		System.out.println("The temperature in Celsius is: " + celsiusTemp);
+		}
+		else
+		{
+		    System.out.println("Unable to compute");
+		    input.nextLine();  // clear bad data
+		}
+
+		System.out.println("");  // Print a blank line 
+		
+		// Ask the user for a temperature in Celsius
+		System.out.print("Enter a temperature in Celsius: ");
+		if (input.hasNextDouble())
+		{
+		    celsiusTemp = input.nextDouble();
+    
+            // convert to Fahrenheit and display result		
+    		fahrenheitTemp = (celsiusTemp * 9.0 / 5.0) + 32.0;
+    		System.out.println("The temperature in Fahrenheit is: " + fahrenheitTemp);
+		}
+		else
+		{
+		    System.out.println("Unable to compute");
+		    input.nextLine();  // clear bad data
+		}
+
+		input.close();  // done with Scanner
+	}
+}
