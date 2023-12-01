@@ -1,0 +1,29 @@
+import java.util.*;
+class CashRegister
+{
+   public static void main(String[] args)
+   {
+       double cost = 5.00;  // cost of the item being purchased
+       
+       // get number of items from the user
+       Scanner input = new Scanner(System.in);
+       System.out.print("How many items do you want to buy (0-5)? ");
+       int count = input.nextInt();
+       input.close();
+       
+       // calculate total cost
+       double totalCost = cost * count;
+       
+       if (count >= 5)
+       {
+           System.out.println("Item limit exceeded");
+       }
+       else if (totalCost < 0)
+       {
+           System.out.println("Don't be silly");
+       } else {
+       System.out.println("Your cost is $" + String.format("%.2f",totalCost));
+       }
+   }
+} 
+                
