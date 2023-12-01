@@ -1,0 +1,40 @@
+import java.util.*;
+class PetDuck
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("What's on your mind? ");
+       String conversation = input.nextLine();
+       input.close();
+       
+       // convert input to lower case so we can easily use the string contains() method.
+       conversation = conversation.toLowerCase();   
+       
+       // keep track of whether or not we've matched a keyword
+       boolean matched = false;  
+       
+       if (conversation.contains("food"))
+       {
+            System.out.println("I like quackers");
+            matched = true;
+       }
+        if (conversation.contains("joke"))
+       {
+            System.out.println("You quack me up");
+            matched = true;
+       }
+       if (conversation.contains("pay"))
+       {
+            System.out.println("Put it on my bill");
+            matched = true;
+       }
+       if (!matched)
+       {
+            System.out.println("Not interested");
+       }
+
+       System.out.println("Good talk");
+   }
+} 
+                
