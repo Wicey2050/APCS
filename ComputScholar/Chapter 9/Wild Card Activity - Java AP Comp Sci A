@@ -1,0 +1,33 @@
+// Student name
+import java.util.*;
+
+public class WildCard
+{
+   public static void main(String[] args)
+   {
+       // get and display user input
+       Scanner input = new Scanner(System.in);
+       System.out.println("Enter a month (1-12), day ('Monday' - 'Sunday') and full moon status ('true' or 'false'): ");
+       int month = input.nextInt();
+       String weekday = input.next();
+       boolean fullmoon = input.nextBoolean();
+       input.close();
+       
+       System.out.println("You are playing Fizzbin during month " + month + ", on a " + weekday + ", with fullmoon = " + fullmoon);
+       
+       // STUDENT CODE HERE
+        if ((month % 2 == 0) && weekday.equalsIgnoreCase("monday")) {
+            System.out.println("Wild card is Ace");
+        } else if ((month %2 != 0) && (fullmoon == true)) {
+            System.out.println("Wild card is King");
+        } else if (weekday.equalsIgnoreCase("Saturday") || weekday.equalsIgnoreCase("Sunday")) {
+            System.out.println("Wild card is Queen");
+        } else if (((month == 1) || (month == 2) || (month == 3)) || (!(fullmoon) && (weekday.equalsIgnoreCase("Wednesday")))) {
+            System.out.println("Wild card is Jack");
+        } else {
+            System.out.println("Wild card is 2");
+        }
+
+
+   }
+}
