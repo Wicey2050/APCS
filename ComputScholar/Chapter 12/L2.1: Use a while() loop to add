@@ -1,0 +1,27 @@
+import java.util.*;
+class Adder
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       
+       int sum = 0;
+       
+       System.out.print("Enter number to add: ");
+       int number = input.nextInt();
+       
+       // student code here
+        while (number > 0) {
+            sum += number;
+            System.out.print("Enter number to add: ");
+            number = input.nextInt();
+        } 
+
+
+       
+       // display the result and close the input
+       System.out.println("Sum: " + sum);
+       input.close();
+   }
+} 
+                
