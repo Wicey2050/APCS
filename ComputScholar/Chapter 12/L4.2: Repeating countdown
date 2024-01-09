@@ -1,0 +1,24 @@
+import java.util.*;
+class Nesting
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       
+       int top;
+
+       // student code here
+       do {
+           System.out.print("Enter top number (or 0 to quit): ");
+           top = input.nextInt();
+           for(int i = top; i > 0; i--) {
+               System.out.print(i);
+           }
+           System.out.println();
+       } while(top != 0);
+
+       
+       input.close();
+   }
+} 
+                
