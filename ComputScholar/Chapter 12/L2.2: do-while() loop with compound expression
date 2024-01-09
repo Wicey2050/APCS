@@ -1,0 +1,28 @@
+import java.util.*;
+class GuessingGame
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       
+       String color;
+       
+       // student code here
+        do {
+            System.out.print("Guess my favorite color: ");
+            color = input.next();
+            
+            if (color.equalsIgnoreCase("green")) {
+                System.out.println("That's right!");
+             } else if (color.equalsIgnoreCase("quit")) {
+                break;
+         }
+        } while (!color.equalsIgnoreCase("green") && !color.equalsIgnoreCase("quit"));
+
+       
+       // display the final message and close the input
+       System.out.println("Thanks for playing");
+       input.close();
+   }
+} 
+                
