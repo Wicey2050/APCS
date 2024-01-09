@@ -1,0 +1,20 @@
+import java.util.*;
+class Nesting
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter square size: " );
+       int size = input.nextInt();
+       input.close();
+       
+       // student code here
+        for (int row = 1; row <= size; row++) {
+            for (int col = 1; col <= size; col++) {
+                System.out.print(row);
+            }
+            System.out.println(); 
+       }
+   }
+} 
+                
