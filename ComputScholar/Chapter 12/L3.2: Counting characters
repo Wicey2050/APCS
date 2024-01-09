@@ -1,0 +1,28 @@
+import java.util.*;
+class Counter
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter a sentence: " );
+       String sentence = input.nextLine();
+       input.close();
+       
+       int numSpaces = 0;
+
+       // student code here
+       for (int i = 0; i < sentence.length(); i++ )
+       {
+        if (sentence.charAt(i) == ' ') {
+            numSpaces += 1;
+        }
+        if (sentence.charAt(i) == 'z') {
+           System.out.println("z Detected");
+           break;
+        }
+       }
+
+       System.out.println("Found " + numSpaces + " spaces");
+   }
+} 
+                
