@@ -1,0 +1,22 @@
+import java.util.*;
+class Counter
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter the top number: " );
+       int top = input.nextInt();
+       input.close();
+       
+       // student code here
+       for (int i = 1; i < top + 1; i++)
+       {
+           if ( (i%3) == 0)
+           {
+               continue;
+           }
+           System.out.print(i + " ");
+       }
+   }
+} 
+                
