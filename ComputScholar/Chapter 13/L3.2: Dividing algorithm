@@ -1,0 +1,18 @@
+import java.util.*;
+class Divider
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter a decimal number: " );
+       double value = input.nextDouble();
+       input.close();
+       
+       // student code here
+        do {
+            System.out.println(value);
+            value /= 5;
+        } while (value > 1);
+    System.out.println("Division Complete");
+   }
+}
