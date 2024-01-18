@@ -1,0 +1,42 @@
+import java.util.*;
+class Days
+{
+   public static void main(String[] args)
+   {
+       Scanner input = new Scanner(System.in);
+       System.out.print("What day is it? ");
+       String day = input.nextLine();
+       input.close();
+       
+       // student code here
+       String tomorrow;
+        switch(day.toLowerCase()) {
+            case "monday":
+                tomorrow = "Tuesday";
+            break;
+            case "tuesday":
+                tomorrow = "Wednesday";
+            break;
+            case "wednesday":
+                tomorrow = "Thursday";
+            break;
+            case "thursday":
+                tomorrow = "Friday";
+            break;
+            case "friday":
+                tomorrow = "Saturday";
+            break;
+            case "saturday":
+                tomorrow = "Sunday";
+            break;
+            case "sunday":
+                tomorrow = "Monday";
+            break;
+            default:
+                tomorrow = "mystery";
+            break;
+        }
+        System.out.println("Tomorrow is a " + tomorrow);
+   }
+} 
+                
