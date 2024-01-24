@@ -1,0 +1,44 @@
+import java.util.*;
+class Rocket
+{
+    private double speed;
+    private double elapsedTime;
+    
+    // no changes should be made to the main() method
+    public static void main(String[] args)
+    {
+       Scanner input = new Scanner(System.in);
+       
+       System.out.print("Enter rocket #1 speed (KPS) and number of seconds in flight: ");
+       double speed = input.nextDouble();
+       double elapsedTime = input.nextDouble();
+       Rocket r1 = new Rocket(speed, elapsedTime);
+       
+       System.out.print("Enter rocket #2 number of seconds in flight: ");
+       elapsedTime = input.nextDouble();
+       Rocket r2 = new Rocket(elapsedTime);
+       
+       input.close();
+
+       System.out.println("Rocket #1 has traveled " + r1.getDistance() + " KM in " + r1.elapsedTime + " seconds");
+       System.out.println("Rocket #2 has traveled " + r2.getDistance() + " KM in " + r2.elapsedTime + " seconds");
+    }
+    
+    // student code here - define 2 constructors
+    public Rocket(double speed, double elapsedTime) {
+        this.speed = speed;
+        this.elapsedTime = elapsedTime;
+    }
+
+    public Rocket(double elapsedTime) {
+        this.speed = 10.0;
+        this.elapsedTime = elapsedTime;
+    }
+
+
+    public double getDistance()
+    {
+        return speed * elapsedTime;
+    }
+} 
+                
