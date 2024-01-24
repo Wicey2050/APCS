@@ -1,0 +1,30 @@
+import java.util.*;
+class Rocket
+{
+    private double speed;
+    private double elapsedTime;
+    
+    public static void main(String[] args)
+    {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter rocket speed (KPS) and number of seconds in flight: ");
+       double speed = input.nextDouble();
+       double elapsedTime = input.nextDouble();
+       input.close();
+
+       // student code here       
+       Rocket newRocket = new Rocket();
+       newRocket.speed = speed;
+       newRocket.elapsedTime = elapsedTime;
+       double distance = newRocket.getDistance();
+       System.out.println("Rocket has traveled " + distance + " KM in " + elapsedTime + " seconds");
+
+
+    }
+    
+    public double getDistance()
+    {
+        return speed * elapsedTime;
+    }
+}
+                
