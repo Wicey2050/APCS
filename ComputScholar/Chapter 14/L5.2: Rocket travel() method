@@ -1,0 +1,45 @@
+import java.util.*;
+class Rocket
+{
+    private double fuel = 1000.0;
+    
+    // no changes should be made to the main() method
+    public static void main(String[] args)
+    {
+       Scanner input = new Scanner(System.in);
+
+       Rocket r = new Rocket();
+       double fuelRemaining;
+
+       do
+       {
+           System.out.print("Enter flight time: ");
+           double flightTime = input.nextDouble();
+           
+           if (flightTime <= 0) 
+           {
+                break;
+           }
+           
+           // student code here - call travel() and print message
+           fuelRemaining = r.travel(flightTime);
+           System.out.println("There are " + fuelRemaining + " remaining units of fuel after " + flightTime + " seconds.");
+           
+       } while (fuelRemaining > 0);
+    
+       System.out.println("Journey complete");
+       input.close();
+    }
+
+    // student code here - create travel() method
+    public double travel(double flightTime) {
+        double newFuel = this.fuel -= flightTime * 10;
+        if (newFuel <= 0) {
+            fuel = 0;
+        }
+        return fuel;
+    }
+
+
+} 
+                
