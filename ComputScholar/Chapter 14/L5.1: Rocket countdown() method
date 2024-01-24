@@ -1,0 +1,28 @@
+import java.util.*;
+class Rocket
+{
+    private double speed;
+    private double elapsedTime;
+    
+    // no changes should be made to the main() method
+    public static void main(String[] args)
+    {
+       Scanner input = new Scanner(System.in);
+       
+       System.out.print("Enter countdown start: ");
+       int start = input.nextInt();
+       input.close();
+       
+       Rocket r = new Rocket();
+       r.countdown(start);
+    }
+    
+    // student code here
+    public void countdown(int countDownStart) {
+        for (int i = countDownStart; i > 0; i--) {
+            System.out.print(i + " ");
+        }
+        System.out.print("LIFTOFF");
+    }
+} 
+                
